@@ -1,6 +1,6 @@
-## Welcome to GitHub Pages
+## Clarissa Labrum's Github
 
-You can use the [editor on GitHub](https://github.com/clarissalabrum/clarissalabrum.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+My Github account currenrly contains projects that have been completed in courses taken at Utah State University.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
