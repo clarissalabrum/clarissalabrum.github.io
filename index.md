@@ -1,6 +1,4 @@
-## Clarissa Labrum's Github
-
-My Github account currenrly contains projects that have been completed in courses taken at Utah State University.
+My Github account currently contains projects that have been completed in courses taken at Utah State University and Snow College
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
