@@ -10,7 +10,7 @@ I am ready to join the work field, continue to improve my skills and become part
 
 ## This Github
 
-My Github account currently contains projects that have been completed in previos courses taken at USU and Snow College.
+[My Github](https://github.com/clarissalabrum) account currently contains projects that have been completed in previous courses taken at USU and Snow College.
 
 [CS 2420, Algorithms and Data Structures](https://github.com/clarissalabrum/cs2420) repository contains different projects that involved using data structures to solve
 different logical problems.
@@ -21,5 +21,9 @@ different logical problems.
 ## Personal
 
 [Resume](https://github.com/clarissalabrum/personal/blob/master/ClarissaLabrumResume.pdf)
+
+[LinkedIn](linkedin/in/clarissalabrum)
+
+[Handshake](https://usu.joinhandshake.com/users/13587320)
 
 Email: clarissa.labrum@gmail.com
