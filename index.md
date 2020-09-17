@@ -1,35 +1,25 @@
-My Github account currently contains projects that have been completed in courses taken at Utah State University and Snow College
+# Clarissa Labrum
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Bio
 
-### Markdown
+One thing I know for sure is that I love problem solving. My degree in Computation Mathematics and Minor in Computer Science has given me a great foundation for a job in software development.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+I am proficient in Java and have experience in other languages such as python, C++, C#, HTML, CSS, and JavaScript.
 
-```markdown
-Syntax highlighted code block
+I am ready to join the work field, continue to improve my skills and become part of a team to accomplish something great.
 
-# Header 1
-## Header 2
-### Header 3
+## This Github
 
-- Bulleted
-- List
+My Github account currently contains projects that have been completed in previos courses taken at USU and Snow College.
 
-1. Numbered
-2. List
+[CS 2420, Algorithms and Data Structures](https://github.com/clarissalabrum/cs2420) repository contains different projects that involved using data structures to solve
+different logical problems.
 
-**Bold** and _Italic_ and `Code` text
+[Math 5620 Numerical Solutions to Differential Equations](https://github.com/clarissalabrum/math5620). Assignments for this class were in the form of tasksheets where sometimes many java projects needed to be created to solve the problems. The course required a Software Manual where every project was documented. The link to the projects and software manual is below.
 
-[Link](url) and ![Image](src)
-```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+## Personal
 
-### Jekyll Themes
+[Resume](https://github.com/clarissalabrum/personal/blob/master/ClarissaLabrumResume.pdf)
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/clarissalabrum/clarissalabrum.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Email: clarissa.labrum@gmail.com
