@@ -21,7 +21,7 @@ different logical problems.
 
 [Resume](https://github.com/clarissalabrum/personal/blob/master/ClarissaLabrumResume.pdf)
 
-[LinkedIn](linkedin/in/clarissalabrum)
+[LinkedIn](https://www.linkedin.com/in/clarissalabrum/)
 
 [Handshake](https://app.joinhandshake.com/users/29446965)
 
