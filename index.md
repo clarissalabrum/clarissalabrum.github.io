@@ -23,6 +23,6 @@ different logical problems.
 
 [LinkedIn](linkedin/in/clarissalabrum)
 
-[Handshake](https://usu.joinhandshake.com/users/13587320)
+[Handshake](https://app.joinhandshake.com/users/29446965)
 
 Email: clarissa.labrum@gmail.com
