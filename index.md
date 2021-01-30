@@ -15,7 +15,7 @@ I have completed a Bacheolors degree at Utah State Univeristy. Majoring in Compu
 [CS 2420, Algorithms and Data Structures](https://github.com/clarissalabrum/cs2420) repository contains different projects that involved using data structures to solve
 different logical problems.
 
-[Math 4610](), [Math 5620 Numerical Solutions to Differential Equations](https://github.com/clarissalabrum/math5620), Assignments for these classes were in the form of tasksheets where sometimes different java projects were created to solve the problems. The courses required a Software Manual where every project was documented. 
+[Math 4610 Computational Mathematics](https://github.com/clarissalabrum/math4610), [Math 5620 Numerical Solutions to Differential Equations](https://github.com/clarissalabrum/math5620), Assignments for these classes were in the form of tasksheets where sometimes different java projects were created to solve the problems. The courses required a Software Manual where every project was documented. 
 
 ## Personal
 
