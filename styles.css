@@ -10,45 +10,82 @@ body {
     min-height: 100vh;
 }
 
-.backgroundImageContainer {
+.header {
+    background-color: #ffffe4;
     box-shadow: 0px 0px 50px 17px rgba(0,0,0,0.82);
-    background: linear-gradient(#ffffe4 10%,transparent 100%); /* W3C */
-
-    display: inline-block;
-    max-height: 13rem;
-    overflow: hidden;
-    position: relative;
+    margin-bottom: 2rem;
+    z-index: 1;
+    
 }
 
-.backgroundImage {
+.innerNav {
+    background-color: #ffffe4;
+    display: grid;
+    grid-template-columns: 3fr 5fr;
+    left: 0;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 1rem;
+    position: fixed;
+    right: 0;
+    z-index: 1;
+}
+
+.navBackground {
+    background-color: #ffffe4;
+    height: 54px;
+    position: fixed;
+    width: 100%;
+}
+
+.headerTitle {
+    color: black;
+    font-size: larger;
+    font-weight: bold;
+    text-align: start;
+}
+
+.linkContainer {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100%;
+    z-index: 1;
+}
+
+@media screen and (max-width: 680px) {
+    .innerNav {
+        display: block;
+        padding: 1rem 0;
+        width: 100%;
+    }
+    
+    .headerTitle {
+        display: block;
+        padding-bottom: 1rem;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .linkContainer {
+        font-size: small;
+    }
+    
+}
+
+.imagePlaceholder {
+    background-color: #a4b8c7;
+    height: 7rem;
+}
+
+/* .backgroundImage {
     display:block;
     height: auto;
     position: relative;
     width: 100%;
     z-index:-1;
-}
-
-.headerTitle {
-    bottom: 1rem;
-    color: rgb(255, 254, 247);
-    font-size: 5rem;
-    font-weight: bold;
-    position: absolute;
-    text-shadow: 0px 0px 10px rgba(0,0,0,0.82);
-    width: 100%;
-}
-
-.linkContainer {
-    align-items: center;
-    background-color: #ffffe4;
-    display: grid;
-    /* font-weight: bold; */
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    padding: 1rem;
-    position: fixed;
-    width: 100%;
-    z-index: 1;
-}
+} */
 
 .pageLink {
     transition: 0.2s;

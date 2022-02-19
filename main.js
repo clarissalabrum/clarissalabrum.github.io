@@ -2,12 +2,10 @@
 let homeContent = `
     <div class="homeContent">
         <div id="welcome">Hey There!</div>
-        <div>
+        <p>
             I made this website to show people that I know how to do some things with a computer. 
-            I started working in front end web developement in 2021. Before then I spent some time
-            as a civil engineering student, then I became a computational mathematics college graduate. 
-            That helped lead me to where I am today. Hope you enjoy your time exploring my work!
-        </div>
+            I started working in front end web developement in 2021. Hope you enjoy your time exploring my work!
+        </p>
     </div>
 `
 
