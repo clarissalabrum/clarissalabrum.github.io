@@ -20,6 +20,7 @@ body {
 
 .innerNav {
     background-color: #ffffe4;
+    /* background-color: rgb(2, 32, 55); */
     display: grid;
     grid-template-columns: 3fr 5fr;
     left: 0;
@@ -33,13 +34,15 @@ body {
 
 .navBackground {
     background-color: #ffffe4;
+    /* background-color: rgb(2, 32, 55); */
     height: 54px;
     position: fixed;
     width: 100%;
 }
 
 .headerTitle {
-    color: black;
+    color: black; 
+    /* color: white; */
     font-size: larger;
     font-weight: bold;
     text-align: start;
@@ -74,22 +77,10 @@ body {
     
 }
 
-.imagePlaceholder {
-    background-color: #a4b8c7;
-    height: 7rem;
-}
-
-/* .backgroundImage {
-    display:block;
-    height: auto;
-    position: relative;
-    width: 100%;
-    z-index:-1;
-} */
-
 .pageLink {
     transition: 0.2s;
-    color: black;
+    color: black; 
+    /* color: white; */
     text-decoration: none;
 }
 
