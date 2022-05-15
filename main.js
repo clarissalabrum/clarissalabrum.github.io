@@ -148,6 +148,38 @@ let loadLink = (name) => {
     linksContainer.appendChild(linkElement);
 }
 
+let page, toggle, toggleIcon;
+
+function setCheckedState() {
+    if (!(localStorage.checked === undefined)) {
+        toggle.checked = isTrue(localStorage.getItem("checked"));
+        toggleTheme();
+    }
+}
+
+function toggleTheme() {
+    if (toggle.checked) {
+        page.classList.replace("light", "dark");
+    } else {
+        page.classList.replace("dark", "light");
+    }
+
+    toggleIconTheme();
+    localStorage.setItem("checked", toggle.checked);
+}
+
+function toggleIconTheme() {
+    if (page.classList.contains("light")) {
+        toggleIcon.src = "./media/moon.svg";
+    } else {
+        toggleIcon.src = "./media/sun.svg";
+    }
+}
+
+function isTrue(value) {
+  return value === "true";
+}
+
 let init = () => {
     loadContent("HOME")
     loadLink("HOME");
@@ -155,6 +187,11 @@ let init = () => {
     loadLink("PROJECTS");
     loadLink("ABOUT ME");
     document.getElementsByClassName("pageLink")[0].classList.add("active");
+    page = document.querySelector("body");
+    toggle = document.querySelector(".toggle-input");
+    toggleIcon = document.querySelector(".toggle-icon");
+    setCheckedState();
+    toggle.addEventListener("change", toggleTheme);
 }
 
 window.onload = init;

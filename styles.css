@@ -1,8 +1,30 @@
+.light {
+    --main-background: white;
+    --main-text: black;
+    --primary-color: rgb(255, 255, 228);
+    --secondary-color: rgb(255, 215, 114);
+    --third-color: rgb(255, 191, 29);
+    --forth-color: rgb(223, 156, 0);
+    --border: 0px;
+}
+
+.dark {
+    --main-background: rgb(3, 20, 34);
+    --main-text: white;
+    --primary-color:rgb(3, 20, 34);
+    --secondary-color:  rgb(103, 116, 150);
+    --third-color: rgb(73, 86, 129);
+    --forth-color:  rgb(45, 60, 95);
+    --border: 1px;
+}
+
 html {
     overflow-y: scroll;
 }
 
 body {
+    background-color: var(--main-background);
+    color: var(--main-text);
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     text-align: center;
@@ -11,38 +33,35 @@ body {
 }
 
 .header {
-    background-color: #ffffe4;
+    background-color: var(--primary-color);
     box-shadow: 0px 0px 50px 17px rgba(0,0,0,0.82);
     margin-bottom: 2rem;
     z-index: 1;
-    
 }
 
 .innerNav {
-    background-color: #ffffe4;
-    /* background-color: rgb(2, 32, 55); */
+    background-color: var(--primary-color);
     display: grid;
-    grid-template-columns: 3fr 5fr;
+    grid-template-columns: 3fr 5fr 1fr;
     left: 0;
     margin: 0 auto;
     max-width: 800px;
     padding: 1rem;
+    padding-bottom: 10px;
     position: fixed;
     right: 0;
     z-index: 1;
 }
 
 .navBackground {
-    background-color: #ffffe4;
-    /* background-color: rgb(2, 32, 55); */
+    background-color: var(--primary-color);
     height: 54px;
     position: fixed;
     width: 100%;
 }
 
 .headerTitle {
-    color: black; 
-    /* color: white; */
+    color: var(--main-text); 
     font-size: larger;
     font-weight: bold;
     text-align: start;
@@ -54,6 +73,68 @@ body {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     width: 100%;
     z-index: 1;
+}
+
+.toggle {
+    user-select: none;
+    width: 20px;
+    align-items: end;
+    display: grid;
+    justify-self: center;
+}
+  
+.content:hover .toggle-icon {
+    animation: wiggle 1s linear;
+}
+  
+.toggle-icon {
+    width: 20px;
+    user-select: none;
+}
+  
+.toggle-input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    user-select: none;
+}
+  
+.toggle-label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 50px;
+    width: 20px;
+    margin: 0 auto;
+    transition: all 0.3s ease;
+    user-select: none;
+}
+  
+.toggle-label:hover {
+    background-color: var(--secondary-color);
+}
+  
+.toggle-label:active {
+    transform: scale(0.95);
+}
+
+.mtnBackground {
+    fill: var(--primary-color);
+}
+
+.mtnOne {
+    fill: var(--secondary-color);
+}
+
+.mtnTwo {
+    fill: var(--third-color);
+}
+
+.mtnThree {
+    fill: var(--forth-color);
 }
 
 @media screen and (max-width: 680px) {
@@ -79,8 +160,7 @@ body {
 
 .pageLink {
     transition: 0.2s;
-    color: black; 
-    /* color: white; */
+    color: var(--main-text); 
     text-decoration: none;
 }
 
@@ -111,6 +191,7 @@ body {
 /* resume */
 
 .resumeContainer {
+    border: var(--border) solid white;
     border-radius: 8px;
     box-shadow: 0px 0px 50px 17px rgba(0,0,0,0.32);
     margin: 2rem 5rem;
@@ -128,6 +209,7 @@ body {
 }
 
 .projectTile {
+    border: var(--border) solid white;
     border-radius: 1rem;
     box-shadow: 0px 0px 50px 17px rgba(0,0,0,0.32);
     margin: 2rem;
@@ -142,7 +224,7 @@ body {
 }
 
 .projectImage {
-    background-color: #a4b8c7;
+    background-color: var(--secondary-color);
     font-size: 25px;
     font-weight: bold;
     align-items: center;
@@ -153,13 +235,13 @@ body {
 
 .projectContent {
     min-width: 100%;
-
     height: auto
 }
 
 /* aboutme */
 
 .aboutmeTile {
+    border: var(--border) solid white;
     border-radius: 1rem;
     box-shadow: 0px 0px 50px 17px rgba(0,0,0,0.32);
     height: calc(100% - 17rem);
@@ -179,5 +261,4 @@ body {
     height: 100%;
     justify-content: center;
     align-items: center;
-
 }
