@@ -1,0 +1,178 @@
+.light {
+    --main-background: white;
+    --secondary-background: rgb(235, 235, 235);
+
+    --main-text: black;
+    --main-accent: rgb(219, 165, 37);
+
+    --border: 0px;
+}
+
+.dark {
+    --main-background: rgb(3, 20, 34);
+    --secondary-background: rgb(6, 23, 37);
+
+    --main-text: white;
+    --main-accent: rgb(73, 86, 129);
+
+    --border: 1px;
+}
+
+/* html {
+    overflow-y: scroll;
+} */
+
+body {
+    background-color: var(--main-background);
+    color: var(--main-text);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    text-align: center;
+    display: grid;
+}
+
+footer {
+    align-items: center;
+    background-color: black;
+    box-shadow: 0px 15px 50px 15px rgba(0,0,0,0.5);
+    color: white;
+    display: flex;
+    height: 60px;
+    padding: 0 2rem;
+    text-align: start;
+    font-size: 1rem;
+}
+
+.flex-center {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* resume */
+
+.resumeContainer {
+    border: var(--border) solid white;
+    border-radius: 8px;
+    box-shadow: 0px 0px 50px 17px rgba(0,0,0,0.32);
+    margin: 2rem 5rem 8rem;
+    margin-inline: auto;
+    max-width: 1000px;
+    padding: 2rem 5rem;
+    font-size: 2vh;
+}
+
+@media screen and (max-width: 1000px) {
+    .resumeContainer {
+        padding: 1rem;
+        margin: 1rem 3rem;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .resumeContainer {
+        margin: 1rem;
+        padding: 1rem;
+    }
+}
+
+/* projects */
+
+.projectTilesContatiner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-inline: auto;
+    /* max-width: 1000px; */
+    padding: 0 6rem;
+}
+
+.projectTile {
+    border: var(--border) solid white;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 50px 17px rgba(0,0,0,0.32);
+    margin: 2rem;
+    overflow: hidden;
+    position: relative;
+}
+
+@media screen and (max-width: 1000px) {
+    .projectTilesContatiner {
+        grid-template-columns: 1fr 1fr;
+        padding: 0 2rem;
+    }
+
+    .projectTile {
+        margin: 1rem;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .projectTilesContatiner {
+        grid-template-columns: 1fr;
+        padding: 0 1rem;
+    }
+
+    .projectTile {
+        margin: 1rem;
+    }
+}
+
+.projectTile:before {
+	content: "";
+	float: left;
+	padding-top: 100% 	/* initial ratio of 1:1*/
+}
+
+.projectImage {
+    align-items: center;
+    background-color: var(--main-accent);
+    font-size: 25px;
+    font-weight: bold;
+    height: 44px;
+    justify-content: center;
+    padding-top: 1rem;
+}
+
+.projectContent {
+    height: auto;
+    min-width: 100%;
+}
+
+/* aboutme */
+
+.aboutme {
+    --size: 35vh;
+    --gap: 10px;
+    --scale-factor: 1.5;
+
+    display: grid;
+    height: calc(100vh - 70px - 60px);
+    place-content: center;
+}
+
+.aboutmeGallery {
+
+    display: grid;
+    gap: var(--gap);
+    height: calc(2 * var(--size) + var(--gap));
+    aspect-ratio: 1;
+    grid-template-columns: repeat(3, auto);
+}
+
+.aboutmeGallery > img {
+    width: 0;
+    height: 0;
+    min-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    filter: grayscale(80%);
+    transition: .35s linear;
+}
+
+.aboutmeGallery img:hover{
+    filter: grayscale(0);
+    width: calc(var(--size) * var(--scale-factor));
+    height: calc(var(--size) * var(--scale-factor));
+}

@@ -1,11 +1,40 @@
-
 let homeContent = `
-    <div class="homeContent">
-        <div id="welcome">Hey There!</div>
-        <p>
-            I made this website to show people that I know how to do some things with a computer. 
-            I started working in front end web developement in 2021. Hope you enjoy your time exploring my work!
-        </p>
+    <div class="homeContainer">
+        <div class="homeContent">
+            <div class="flex-center">
+                <div id="welcome">Hello, I'm <br/><span id="name">Clarissa Labrum</span>,<br/>A Web Developer</div>
+            </div>
+            <div class="flex-center message">
+                <div>
+                    <p>I made this website to show people that I know how to do some things with a computer.</p> 
+                    <p>I started working in front end web developement in 2021.</p> 
+                    <p>Hope you enjoy your time exploring my work!</p>
+                </div>
+            </div>
+        </div>
+        <div class="sideThing">
+            <div>
+                <span>Education:</span>
+                <p class="education">Bachelors in Computational Mathematics</p>
+                <p>Minor in Computer Science</p>
+            </div>
+            <div>
+                <span>Experience:</span>
+                <p>1+ years</p>
+            </div>
+            <div>
+                <span>Location:</span>
+                <p>Payson, Utah</p>
+            </div>
+            <div>
+                <span>Interests:</span>
+                <p>Hiking</p>
+                <p>Sitcoms</p>
+                <p>Sports</p>
+                <p>Harry Potter</p>
+                <p>Running</p>
+            </div>
+        </div>
     </div>
 `
 
@@ -107,9 +136,15 @@ let projectContent = `
 `
 
 let aboutmeContent = `
-    <div class="aboutmeTile">
-        <img class='aboutmeImage' src='./media/ClarissaBryce.jpg' width='2444' height='3342' />
-        <div class="aboutmeContent">Some interesting facts will probably go here</div>
+    <div class="aboutme">
+        <div class="aboutmeGallery">
+            <img src='./media/ClarissaBryce.jpg' width='2444' height='3342' />
+            <img src='./media/basketball.jpg' width='2444' height='3342' />
+            <img src='./media/hogwarts.jpg' width='2444' height='3342' />
+            <img src='./media/nasa.jpg' width='2444' height='3342' />
+            <img src='./media/running.jpg' width='2444' height='3342' />
+            <img src='./media/tyson.jpg' width='2444' height='3342' />
+        </div>
     </div>
 `
 
