@@ -137,13 +137,48 @@ let projectContent = `
 
 let aboutmeContent = `
     <div class="aboutme">
-        <div class="aboutmeGallery">
-            <img src='./media/ClarissaBryce.jpg' width='2444' height='3342' />
-            <img src='./media/basketball.jpg' width='2444' height='3342' />
-            <img src='./media/hogwarts.jpg' width='2444' height='3342' />
-            <img src='./media/nasa.jpg' width='2444' height='3342' />
-            <img src='./media/running.jpg' width='2444' height='3342' />
-            <img src='./media/tyson.jpg' width='2444' height='3342' />
+        <div class="aboutme-gallery">
+            <div>    
+                <img src='./media/bryce.jpg' width='2444' height='3342' />
+                <p class='aboutme-description'> 
+                    I've officially been to 8 National Parks and multiple State Parks.  
+                    Bryce competes with Mesa Verde for my favorite.
+                </p>
+            </div>
+            <div>    
+                <img src='./media/college.jpg' width='2444' height='3342' />
+                <p class='aboutme-description'> 
+                    I started out at Snow College doing Civil Engineering
+                    and then switched over to the way cooler math degree at USU.
+                </p>
+            </div>
+            <div>    
+                <img src='./media/hogwarts.jpg' width='2444' height='3342' />
+                <p class='aboutme-description'> 
+                    Here's a list of series I have watched/read over 10 times: 
+                    Harry Potter, The Office, Big Bang Theory, New Girl, 
+                    & Parks and Rec
+                </p>
+            </div>
+            <div>    
+                <img src='./media/nasa.jpg' width='2444' height='3342' />
+                <p class='aboutme-description'> 
+                    I find space exploration fascinating and if you happen to be from 
+                    NASA or SpaceX I want you to know I would pay to work there!
+                </p>
+            </div>
+            <div>    
+                <img src='./media/running.jpg' width='2444' height='3342' />
+                <p class='aboutme-description'> 
+                    Here's my favorite picture of me running. 
+                </p>
+            </div>
+            <div>    
+                <img src='./media/tyson.jpg' width='2444' height='3342' />
+                <p class='aboutme-description'> 
+                    I've been married to this cute guy since 2016
+                </p>
+            </div>
         </div>
     </div>
 `
