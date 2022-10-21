@@ -39,6 +39,7 @@ let homeContent = `
 `
 
 let resumeContent = `
+    <link rel="stylesheet" href="./styles/resume.css">
     <div style="padding-block-end: 1px;">
         <div class="resumeContainer">
             <h2>Work Experience</h2>
@@ -89,6 +90,7 @@ let resumeContent = `
 `
 
 let projectContent = `
+    <link rel="stylesheet" href="./styles/projects.css">
     <div class="projectTilesContatiner">
         <div class="projectTile">
             <div class="projectImage">
@@ -136,6 +138,7 @@ let projectContent = `
 `
 
 let aboutmeContent = `
+    <link rel="stylesheet" href="./styles/aboutme.css">
     <div class="aboutme">
         <div class="aboutme-gallery">
             <div>    
