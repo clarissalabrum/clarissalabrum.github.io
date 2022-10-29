@@ -47,3 +47,14 @@ footer {
     display: flex;
     justify-content: center;
 }
+
+@media (width > 1200px) {
+    body {
+        grid-template-rows: 4.5em auto 4.5em;
+    }
+
+    footer {
+        font-size: 2em;
+        padding-inline: 10%
+    }
+}

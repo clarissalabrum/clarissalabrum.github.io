@@ -56,9 +56,28 @@
     padding-block-end: 8px;
 }
 
-@media (width < 37em) {
+@media (width > 1200px) {
+    .homeContent #welcome {
+        font-size: 5em;
+    }
+
+    .homeContent .message {
+        font-size: 2em;
+    }
+
+    .sideThing {
+        font-size: 2em;
+    }
+}
+
+@media (width < 740px) {
     .homeContainer {
         grid-template-columns: 1fr;
         grid-template-rows: auto auto auto;
+    }
+
+    .sideThing {
+        align-items: center;
+        text-align: center;
     }
 }

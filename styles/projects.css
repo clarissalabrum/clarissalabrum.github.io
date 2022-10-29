@@ -1,23 +1,38 @@
 .projectTilesContatiner {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-inline: auto;
-    /* max-width: 1000px; */
-    padding: 0 6rem;
+    margin-block: 2em;
+    margin-inline: 8%;
 }
 
 .projectTile {
     border: var(--border) solid white;
     border-radius: 1rem;
     box-shadow: 0px 0px 50px 17px rgba(0,0,0,0.32);
-    margin: 2rem;
+    margin: 0.5rem;
     overflow: hidden;
     position: relative;
 }
 
-@media screen and (max-width: 1000px) {
+.projectTile:before { /* needed for initial ratio of 1:1*/
+	content: "";
+	float: left;
+	padding-top: 100%
+}
+
+.projectHeader {
+    background-color: var(--main-accent);
+    font-size: 1.5em;
+    font-weight: bold;
+    height: 44px;
+    padding-top: 1rem;
+}
+
+@media (width > 1200px) {
     .projectTilesContatiner {
         grid-template-columns: 1fr 1fr;
+        margin-inline: auto;
+        max-width: 1100px;
         padding: 0 2rem;
     }
 
@@ -26,34 +41,15 @@
     }
 }
 
-@media screen and (max-width: 680px) {
+@media (width < 740px) {
     .projectTilesContatiner {
         grid-template-columns: 1fr;
-        padding: 0 1rem;
-    }
-
-    .projectTile {
-        margin: 1rem;
+        margin-inline: 12%;
     }
 }
 
-.projectTile:before {
-	content: "";
-	float: left;
-	padding-top: 100% 	/* initial ratio of 1:1*/
-}
-
-.projectImage {
-    align-items: center;
-    background-color: var(--main-accent);
-    font-size: 1.5em;
-    font-weight: bold;
-    height: 44px;
-    justify-content: center;
-    padding-top: 1rem;
-}
-
-.projectContent {
-    height: auto;
-    min-width: 100%;
+@media (width < 400px) {
+    .projectTilesContatiner {
+        margin-inline: 8%;
+    }
 }

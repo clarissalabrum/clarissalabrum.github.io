@@ -1,6 +1,6 @@
 header {
     box-shadow: 0px -15px 50px 15px rgba(0,0,0,0.5);
-    z-index: 1;
+    z-index: 2;
     position: relative;
 }
 
@@ -13,6 +13,17 @@ header {
     z-index: 2;
 }
 
+#menuButton {
+    background-color: var(--main-background);
+    border: none;
+    display: none;
+    position: absolute;
+}
+
+#menuButton:hover {
+    background-color: var(--main-accent);
+}
+
 .headerTitle {
     color: var(--main-text); 
     font-size: 2em;
@@ -23,42 +34,11 @@ header {
 
 .linkContainer {
     align-items: center;
-    display: grid;
+    display: flex;
     font-size: 1em;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: space-between;
     width: 100%;
     z-index: 1;
-}
-
-/* toggle */
-
-.toggle {
-    align-items: end;
-    display: grid;
-    justify-self: right;
-    user-select: none;
-    width: 2vh;
-}
-
-.toggle-icon {
-    width: 2vh;
-}
-  
-.toggle-input {
-    opacity: 0;
-    position: absolute;
-}
-  
-.toggle-label {
-    border-radius: 2vh;
-    cursor: pointer;
-    padding: 4px;
-}
-  
-.toggle-label:hover {
-    background-color: var(--main-accent);
-    width: 2vh;
-    aspect-ratio: 1;
 }
 
 /* page links */
@@ -76,4 +56,82 @@ header {
 
 .active {
     font-weight: bold;
+}
+
+/* theme button */
+
+#themeButton {
+    background-color: var(--main-background);
+    border: none;
+    border-radius: 25px;
+    justify-self: end;
+    padding: 5px;
+}
+
+.theme-icon {
+    width: 20px;
+}
+  
+#themeButton:hover {
+    background-color: var(--main-accent);
+}
+
+@media (width > 1200px) {
+    .innerNav {
+        padding-inline: 10%
+    }
+
+    .headerTitle {
+        font-size: 3em;
+    }
+
+    .linkContainer {
+        font-size: 1.5em;
+    }
+
+    .theme-icon {
+        width: 25px;
+    }
+}
+
+@media (width < 740px) {
+    #menuButton {
+        display: inline;
+    }
+
+    .headerTitle {
+        margin-inline-start: 3rem;
+    }
+
+    .innerNav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .linkContainer {
+        background-color: var(--secondary-background);
+        box-shadow: 0px 10px 23px 12px rgba(0,0,0,0.20);
+        display: none;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        left: 0;
+        padding-block: 1em;
+        position: absolute;
+        z-index: 1;
+    }
+
+    .linkContainer.open {
+        display: flex;
+        top: 3.5em;
+    }
+}
+
+@media (width < 400px) {
+    .linkContainer {
+        flex-direction: column;
+    }
+
+    .pageLink {
+        padding-block: 0.5em;
+    }
 }

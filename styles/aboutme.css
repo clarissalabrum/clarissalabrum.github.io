@@ -1,22 +1,18 @@
-/* aboutme */
-
-.aboutme {
-    --size: 35vh;
+.aboutmeContainer {
+    --height: 40vh;
     --gap: 10px;
     --scale-factor: 1.5;
-
-    display: grid;
-    height: calc(100vh - 70px - 60px);
-    place-content: center;
+    --width: 25vw;
 }
 
 .aboutme-gallery {
-    aspect-ratio: 1;
     display: grid;
     gap: var(--gap);
     grid-template-columns: repeat(3, auto);
-    height: calc(2 * var(--size) + var(--gap));
+    height: calc(2 * var(--height) + var(--gap));
+    margin: 2rem auto;
     position: relative;
+    width: calc(3 * var(--width) + 2 * var(--gap));
 }
 
 .aboutme-gallery > div {
@@ -41,8 +37,8 @@
 .aboutme-gallery img:hover,
 .aboutme-gallery div:hover {
     filter: grayscale(0);
-    height: calc(var(--size) * var(--scale-factor));
-    width: calc(var(--size) * var(--scale-factor));
+    height: calc(var(--width) * var(--scale-factor));
+    width: calc(var(--width) * var(--scale-factor));
 }
 
 .aboutme-description {
@@ -62,4 +58,24 @@
     padding: 0.5rem;
     pointer-events: none;
     width: calc(100% - 1rem);
+}
+
+
+@media (width < 740px) {
+    .aboutmeContainer {
+        --height: 30vh;
+        --gap: 10px;
+        --scale-factor: 1.5;
+        --width: 40vw;
+    }
+
+    .aboutme-gallery {
+        grid-template-columns: repeat(2, auto);
+        height: calc(3 * var(--height) + 2 * var(--gap));
+        width: calc(2 * var(--width) + var(--gap));
+    }
+
+    .aboutme-gallery img {
+        filter: grayscale(60%);
+    }
 }

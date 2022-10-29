@@ -65,7 +65,7 @@ let resumeContent = `
 let projectContent = `
     <div class="projectTilesContatiner">
         <div class="projectTile">
-            <div class="projectImage">
+            <div class="projectHeader">
                 Project Title
             </div>
             <div class="projectContent">
@@ -73,7 +73,7 @@ let projectContent = `
             </div>
         </div>
         <div class="projectTile">
-            <div class="projectImage">
+            <div class="projectHeader">
                 Project Title
             </div>
             <div class="projectContent">
@@ -81,7 +81,7 @@ let projectContent = `
             </div>
         </div>
         <div class="projectTile">
-            <div class="projectImage">
+            <div class="projectHeader">
                 Project Title
             </div>
             <div class="projectContent">
@@ -89,7 +89,7 @@ let projectContent = `
             </div>
         </div>
         <div class="projectTile">
-            <div class="projectImage">
+            <div class="projectHeader">
                 Project Title
             </div>
             <div class="projectContent">
@@ -97,7 +97,7 @@ let projectContent = `
             </div>
         </div>
         <div class="projectTile">
-            <div class="projectImage">
+            <div class="projectHeader">
                 Project Title
             </div>
             <div class="projectContent">
