@@ -1,4 +1,3 @@
-contact me
 portfolio animantion
 make about me exciting
 Move content into pages
