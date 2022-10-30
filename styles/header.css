@@ -32,6 +32,29 @@ header {
     text-align: start;
 }
 
+.headerTitle span {
+    animation: waveAnimation 1s;
+    animation-iteration-count: 1;
+    animation-delay: calc(.1s * var(--letter));
+    display: inline-block;
+    margin-inline-start: -9px;
+    position: relative;
+}
+
+.headerTitle:hover span {
+    animation-iteration-count: infinite;
+}
+
+@keyframes waveAnimation {
+    0%, 40%, 100% {
+        transform: translateY(0);
+    }
+    
+    20% {
+        transform: translateY(-10px);
+    }
+}
+
 .linkContainer {
     align-items: center;
     display: flex;
@@ -83,6 +106,10 @@ header {
 
     .headerTitle {
         font-size: 3em;
+    }
+
+    .headerTitle span {
+        margin-inline-start: -13px;
     }
 
     .linkContainer {

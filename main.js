@@ -198,7 +198,7 @@ const loadContent = (name) => {
 
 const loadLink = (name) => {
     let linksContainer = document.getElementById("links");
-    let linkElement = document.createElement("div");
+    let linkElement = document.createElement("a");
 
     const removeActive = () => {
         let links = document.getElementsByClassName("active");
